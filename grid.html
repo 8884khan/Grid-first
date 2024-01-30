@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        gap: 2px;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 5fr;
+        background-color: white;
+        /* height: 100vh; */
+      }
+      div {
+        /* border: 2px solid green; */
+        background-color: aquamarine;
+        /* padding: 5px; */
+        height: 10%;
+      }
+      .four {
+        display: flex;
+        justify-content: space-evenly;
+        height: 80%;
+      }
+      .card {
+        border: 1px solid ;
+        width: 100%;
+        height: auto;
+        margin: 10px;
+      }
+
+      h1{
+        margin: 1px;
+      }
+      footer{
+        margin: 1px;
+      }
+
+    @media (max-width:600px){
+        .container{
+            display: block;
+            width: 100%;
+            height: 100%;
+            
+            /* border: 4px solid red; */
+        }
+        div{
+            height:25vh;
+        }
+        footer{
+            text-align: center;
+        }
+
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Login/Register</li>
+        </ul>
+      </div>
+      <div><h1 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">Welcome to Grid Layout</h1></div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        aspernatur autem, vitae quos culpa corporis rem itaque fugit quis
+        deleniti neque quidem maxime doloribus quo, ullam sint voluptatem
+        architecto dignissimos.
+      </div>
+      <div>
+        <div class="four">
+          <div class="card">1</div>
+          <div class="card">2</div>
+          <div class="card">3</div>
+          <div class="card">4</div>
+        </div>
+
+        <footer>
+            <h1>This is a Footer</h1>
+        </footer>
+
+      </div>
+    </div>
+  </body>
+</html>
